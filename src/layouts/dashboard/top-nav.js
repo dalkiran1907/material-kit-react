@@ -65,26 +65,23 @@ export const TopNav = (props) => {
                 </SvgIcon>
               </IconButton>
             )}
-            <Tooltip title="Search">
-              <IconButton>
-                <SvgIcon fontSize="small">
-                  <MagnifyingGlassIcon />
-                </SvgIcon>
-              </IconButton>
-            </Tooltip>
+            
           </Stack>
           <Stack
             alignItems="center"
             direction="row"
             spacing={2}
           >
+            <a href="https://truva.dev/" target="_blank" rel="noopener noreferrer">
             <Tooltip title="Contacts">
               <IconButton>
                 <SvgIcon fontSize="small">
                   <UsersIcon />
                 </SvgIcon>
               </IconButton>
-            </Tooltip>
+            </Tooltip></a>
+
+
             <Tooltip title="Notifications">
               <IconButton>
                 <Badge
@@ -106,7 +103,7 @@ export const TopNav = (props) => {
                 height: 40,
                 width: 40
               }}
-              src="/assets/avatars/avatar-anika-visser.png"
+              src="/assets/logo/truvalogo.png"
             />
           </Stack>
         </Stack>

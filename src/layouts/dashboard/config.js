@@ -1,84 +1,71 @@
-import ChartBarIcon from '@heroicons/react/24/solid/ChartBarIcon';
-import CogIcon from '@heroicons/react/24/solid/CogIcon';
-import LockClosedIcon from '@heroicons/react/24/solid/LockClosedIcon';
-import ShoppingBagIcon from '@heroicons/react/24/solid/ShoppingBagIcon';
-import UserIcon from '@heroicons/react/24/solid/UserIcon';
-import UserPlusIcon from '@heroicons/react/24/solid/UserPlusIcon';
-import UsersIcon from '@heroicons/react/24/solid/UsersIcon';
-import XCircleIcon from '@heroicons/react/24/solid/XCircleIcon';
-import { SvgIcon } from '@mui/material';
+import Image from "next/image";
 
 export const items = [
   {
-    title: 'Overview',
-    path: '/',
+    title: "Worth Harley Davidson",
+    path: "/",
     icon: (
-      <SvgIcon fontSize="small">
-        <ChartBarIcon />
-      </SvgIcon>
-    )
+      <Image
+        fontSize="small"
+        src="/assets/logo/harley-logo.png"
+        alt="Picture of the author"
+        width={20}
+        height={20}
+        border-radius={50}
+      />
+    ),
   },
   {
-    title: 'Customers',
-    path: '/customers',
+    title: "Reed Chevrolet",
+    path: "/reedchevrolet",
     icon: (
-      <SvgIcon fontSize="small">
-        <UsersIcon />
-      </SvgIcon>
-    )
+      <Image
+        fontSize="small"
+        src="/assets/logo/reed-logo.jpg"
+        alt="Picture of the author"
+        width={20}
+        height={20}
+      />
+    ),
   },
   {
-    title: 'Companies',
-    path: '/companies',
+    title: " Northtowne Mitsubishi  ",
+
+    path: "/northtownemitsubish",
     icon: (
-      <SvgIcon fontSize="small">
-        <ShoppingBagIcon />
-      </SvgIcon>
-    )
+      <Image
+        fontSize="small"
+        src="/assets/logo/northtowne-logo.png"
+        alt="Picture of the author"
+        width={20}
+        height={20}
+      />
+    ),
   },
   {
-    title: 'Account',
-    path: '/account',
+    title: "Gavins Point",
+    path: "/gavinspoint",
     icon: (
-      <SvgIcon fontSize="small">
-        <UserIcon />
-      </SvgIcon>
-    )
+      <Image
+        fontSize="small"
+        src="/assets/logo/gavins-logo.png"
+        alt="Picture of the author"
+        width={20}
+        height={20}
+      />
+    ),
   },
   {
-    title: 'Settings',
-    path: '/settings',
+    title: "Bob Sight",
+    path: "/bobsight",
     icon: (
-      <SvgIcon fontSize="small">
-        <CogIcon />
-      </SvgIcon>
-    )
+      <Image
+        fontSize="small"
+        src="/assets/logo/ford-logo.png"
+        alt="Picture of the author"
+        width={20}
+        height={20}
+      />
+    ),
   },
-  {
-    title: 'Login',
-    path: '/auth/login',
-    icon: (
-      <SvgIcon fontSize="small">
-        <LockClosedIcon />
-      </SvgIcon>
-    )
-  },
-  {
-    title: 'Register',
-    path: '/auth/register',
-    icon: (
-      <SvgIcon fontSize="small">
-        <UserPlusIcon />
-      </SvgIcon>
-    )
-  },
-  {
-    title: 'Error',
-    path: '/404',
-    icon: (
-      <SvgIcon fontSize="small">
-        <XCircleIcon />
-      </SvgIcon>
-    )
-  }
 ];
